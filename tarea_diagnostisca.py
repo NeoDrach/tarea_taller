@@ -22,7 +22,7 @@ lista_chistes = [chiste , chiste1 , chiste2, chiste3, chiste4, chiste5]
 label = Label(root, image=chiste )
 label.grid(row=0,column=0,columnspan=3)
 
-
+# Funcion que indica el siguiente chiste
 def clase_siguiente(n_chistes):
     global label
     global anterior
@@ -41,7 +41,7 @@ def clase_siguiente(n_chistes):
     anterior.grid(row=1,column=0)
     siguiente.grid(row=1,column=2)
 
-
+# Funcion para indicar el anterior chiste
 def clase_anterior(n_chistes):
     global label
     global anterior
@@ -60,7 +60,7 @@ def clase_anterior(n_chistes):
     anterior.grid(row=1,column=0)
     siguiente.grid(row=1,column=2)
 
-
+# Se procede a crear 3 botones para adelantar o retroceder
 anterior = Button(root, text='X', state=DISABLED)
 anterior.grid(row=1,column=0)
 
